@@ -335,14 +335,11 @@ function FlowComponent_div_1_div_5_ng_container_1_Template(rf, ctx) { if (rf & 1
 } }
 function FlowComponent_div_1_div_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](2, "video", 42);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "video", 42);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const j_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]().index;
     const i_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]().index;
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtextInterpolate1"](" ", "video" + i_r2 + j_r10, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("id", "video" + i_r2 + j_r10);
 } }
@@ -350,7 +347,7 @@ const _c0 = function (a0) { return { active: a0 }; };
 function FlowComponent_div_1_div_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 39);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, FlowComponent_div_1_div_5_ng_container_1_Template, 2, 1, "ng-container", 40);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](2, FlowComponent_div_1_div_5_ng_container_2_Template, 3, 2, "ng-container", 40);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](2, FlowComponent_div_1_div_5_ng_container_2_Template, 2, 1, "ng-container", 40);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const file_r9 = ctx.$implicit;
@@ -711,8 +708,17 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'flow'
+    },
+    {
         path: 'flow',
         component: src_app_flow_flow_component__WEBPACK_IMPORTED_MODULE_1__["FlowComponent"]
+    },
+    {
+        path: '**',
+        redirectTo: 'flow'
     },
 ];
 class AppRoutingModule {
