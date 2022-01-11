@@ -166,7 +166,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    DEFAULT_IP: 'http://3.112.134.134',
+    DEFAULT_IP: 'https://hownus.com',
     MEDIA_IP: 'https://d2qsy0gfkzz89z.cloudfront.net/u/'
 };
 
